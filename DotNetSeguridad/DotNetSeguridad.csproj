@@ -166,6 +166,12 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Categoria\AgregarCategoria.aspx" />
+    <Content Include="Categoria\BorrarCategoria.aspx" />
+    <Content Include="Categoria\EditarCategoria.aspx" />
+    <Content Include="Categoria\VerCategorias.aspx" />
+    <Content Include="Comentario\BorrarComentario.aspx" />
+    <Content Include="Comentario\EditarComentario.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -186,6 +192,11 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Post\ABMPost.aspx" />
+    <Content Include="Post\AgregarPost.aspx" />
+    <Content Include="Post\BorrarPost.aspx" />
+    <Content Include="Post\EditarPost.aspx" />
+    <Content Include="Post\verPost.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -337,6 +348,48 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Categoria\AgregarCategoria.aspx.cs">
+      <DependentUpon>AgregarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria\AgregarCategoria.aspx.designer.cs">
+      <DependentUpon>AgregarCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria\BorrarCategoria.aspx.cs">
+      <DependentUpon>BorrarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria\BorrarCategoria.aspx.designer.cs">
+      <DependentUpon>BorrarCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria\EditarCategoria.aspx.cs">
+      <DependentUpon>EditarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria\EditarCategoria.aspx.designer.cs">
+      <DependentUpon>EditarCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria\VerCategorias.aspx.cs">
+      <DependentUpon>VerCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria\VerCategorias.aspx.designer.cs">
+      <DependentUpon>VerCategorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comentario\BorrarComentario.aspx.cs">
+      <DependentUpon>BorrarComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comentario\BorrarComentario.aspx.designer.cs">
+      <DependentUpon>BorrarComentario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comentario\EditarComentario.aspx.cs">
+      <DependentUpon>EditarComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comentario\EditarComentario.aspx.designer.cs">
+      <DependentUpon>EditarComentario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -355,6 +408,41 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Post\ABMPost.aspx.cs">
+      <DependentUpon>ABMPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Post\ABMPost.aspx.designer.cs">
+      <DependentUpon>ABMPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Post\AgregarPost.aspx.cs">
+      <DependentUpon>AgregarPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Post\AgregarPost.aspx.designer.cs">
+      <DependentUpon>AgregarPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Post\BorrarPost.aspx.cs">
+      <DependentUpon>BorrarPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Post\BorrarPost.aspx.designer.cs">
+      <DependentUpon>BorrarPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Post\EditarPost.aspx.cs">
+      <DependentUpon>EditarPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Post\EditarPost.aspx.designer.cs">
+      <DependentUpon>EditarPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Post\verPost.aspx.cs">
+      <DependentUpon>verPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Post\verPost.aspx.designer.cs">
+      <DependentUpon>verPost.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
