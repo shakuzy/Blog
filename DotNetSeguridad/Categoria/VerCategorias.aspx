@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="VerCategorias.aspx.cs" Inherits="DotNetSeguridad.Categoria.VerCategorias" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Listview runat="server" ID="lstPosteos">
             <LayoutTemplate><%-- Equivalente a la "Masterpage" --%>
                         <ul class="list-group list-group-flush">                        

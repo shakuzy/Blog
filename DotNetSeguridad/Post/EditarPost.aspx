@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditarPost.aspx.cs" Inherits="DotNetSeguridad.Post.EditarPost" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Label runat="server">Titulo</asp:Label>
     <asp:TextBox runat="server" id="txtTitulo" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
         <asp:Label runat="server">Resumen</asp:Label>

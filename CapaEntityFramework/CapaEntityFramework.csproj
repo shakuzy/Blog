@@ -68,7 +68,6 @@
     <Compile Include="Categorias.cs">
       <DependentUpon>BlogEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Comentario.cs">
       <DependentUpon>BlogEntities.tt</DependentUpon>
     </Compile>

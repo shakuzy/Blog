@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="verPost.aspx.cs" Inherits="DotNetSeguridad.Post.verPost" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1><asp:Label runat="server" ID="lblTitulo"></asp:Label></h1>
         <asp:Label runat="server">                                           </asp:Label><br>
 
