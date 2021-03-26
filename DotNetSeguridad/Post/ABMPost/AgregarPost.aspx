@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarPost.aspx.cs" Inherits="DotNetSeguridad.Post.AgregarPost" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <br>
     <asp:Label runat="server">Titulo</asp:Label>
     <asp:TextBox runat="server" id="txtTitulo" CssClass="form-control"></asp:TextBox>
         <asp:Label runat="server">Resumen</asp:Label>

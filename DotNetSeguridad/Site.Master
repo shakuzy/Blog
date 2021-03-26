@@ -8,7 +8,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
-
+     <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
     <link rel="Stylesheet" href="<%=Page.ResolveUrl("~/Content/bootstrap.min.css") %>" />
     <script src="<%=Page.ResolveUrl("~/Scripts/jquery-3.0.0.slim.js") %>""></script>
     <script src="<%=Page.ResolveUrl("~/Scripts/bootstrap.bundle.min.js") %>"></script>    
@@ -16,7 +18,9 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body><nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+<body>
+        <form runat="server">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,13 +28,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nombre de la aplicación</a>
+                    <a class="navbar-brand" runat="server" href="~/">Mi blog</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Categoria/VerCategorias.aspx">Categoria</a></li>
-                        <li><a runat="server" href="~/Post/ABMPost.aspx">Contacto</a></li>
+                        <li><a runat="server" href="~/Categoria/VerCategorias/VerCategorias.aspx">Categoria</a></li>
+                        <li><a runat="server" href="~/Post/ABMPost/ABMPost.aspx">Post</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
@@ -44,14 +48,14 @@
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hola. <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
+                                    </form>
+                                        </li>
                             </ul>
                         </LoggedInTemplate>
                     </asp:LoginView>
                 </div>
             </div>
         </nav>
-    <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>

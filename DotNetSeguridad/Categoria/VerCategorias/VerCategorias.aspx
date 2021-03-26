@@ -17,11 +17,11 @@
             <%#Eval("Nombre") %>
         </div>
         <div class="col-md-auto">
-            <a class="btn btn-success" href="EditarCategoria.aspx?id=<%#Eval("Id") %>" role="button">Editar</a>    
+            <a class="btn btn-success" href="/Categoria/EditarCategoria.aspx?id=<%#Eval("Id") %>" role="button">Editar</a>    
         </div>
         
         <div class="col col-lg-2">
-            <a class="btn btn-danger" href="BorrarCategoria.aspx?id=<%#Eval("Id") %>" role="button">Borrar</a>    
+            <a class="btn btn-danger" href="/Categoria/BorrarCategoria.aspx?id=<%#Eval("Id") %>" role="button">Borrar</a>    
 
         </div>
         

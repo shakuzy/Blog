@@ -171,7 +171,7 @@
     <Content Include="Categoria\AgregarCategoria.aspx" />
     <Content Include="Categoria\BorrarCategoria.aspx" />
     <Content Include="Categoria\EditarCategoria.aspx" />
-    <Content Include="Categoria\VerCategorias.aspx" />
+    <Content Include="Categoria\VerCategorias\VerCategorias.aspx" />
     <Content Include="Comentario\BorrarComentario.aspx" />
     <Content Include="Comentario\EditarComentario.aspx" />
     <Content Include="Contact.aspx" />
@@ -209,11 +209,14 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Categoria\VerCategorias\Web.config" />
+    <Content Include="Post\ABMPost\Web.config" />
+    <Content Include="Categoria\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Post\ABMPost.aspx" />
-    <Content Include="Post\AgregarPost.aspx" />
-    <Content Include="Post\BorrarPost.aspx" />
-    <Content Include="Post\EditarPost.aspx" />
+    <Content Include="Post\ABMPost\ABMPost.aspx" />
+    <Content Include="Post\ABMPost\AgregarPost.aspx" />
+    <Content Include="Post\ABMPost\BorrarPost.aspx" />
+    <Content Include="Post\ABMPost\EditarPost.aspx" />
     <Content Include="Post\verPost.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -456,11 +459,11 @@
     <Compile Include="Categoria\EditarCategoria.aspx.designer.cs">
       <DependentUpon>EditarCategoria.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Categoria\VerCategorias.aspx.cs">
+    <Compile Include="Categoria\VerCategorias\VerCategorias.aspx.cs">
       <DependentUpon>VerCategorias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Categoria\VerCategorias.aspx.designer.cs">
+    <Compile Include="Categoria\VerCategorias\VerCategorias.aspx.designer.cs">
       <DependentUpon>VerCategorias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Comentario\BorrarComentario.aspx.cs">
@@ -495,32 +498,32 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Post\ABMPost.aspx.cs">
+    <Compile Include="Post\ABMPost\ABMPost.aspx.cs">
       <DependentUpon>ABMPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Post\ABMPost.aspx.designer.cs">
+    <Compile Include="Post\ABMPost\ABMPost.aspx.designer.cs">
       <DependentUpon>ABMPost.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Post\AgregarPost.aspx.cs">
+    <Compile Include="Post\ABMPost\AgregarPost.aspx.cs">
       <DependentUpon>AgregarPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Post\AgregarPost.aspx.designer.cs">
+    <Compile Include="Post\ABMPost\AgregarPost.aspx.designer.cs">
       <DependentUpon>AgregarPost.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Post\BorrarPost.aspx.cs">
+    <Compile Include="Post\ABMPost\BorrarPost.aspx.cs">
       <DependentUpon>BorrarPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Post\BorrarPost.aspx.designer.cs">
+    <Compile Include="Post\ABMPost\BorrarPost.aspx.designer.cs">
       <DependentUpon>BorrarPost.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Post\EditarPost.aspx.cs">
+    <Compile Include="Post\ABMPost\EditarPost.aspx.cs">
       <DependentUpon>EditarPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Post\EditarPost.aspx.designer.cs">
+    <Compile Include="Post\ABMPost\EditarPost.aspx.designer.cs">
       <DependentUpon>EditarPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="Post\verPost.aspx.cs">
