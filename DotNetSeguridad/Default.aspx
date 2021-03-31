@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h3>Estos son los ultimos posteos</h3>
+    <asp:Label runat="server" ID="lbllbl"></asp:Label>
     <asp:Listview runat="server" ID="lstPosteos">
             <LayoutTemplate><%-- Equivalente a la "Masterpage" --%>
                     <div class="card-columns">

@@ -19,43 +19,88 @@
 
 </head>
 <body>
-        <form runat="server">
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Mi blog</a>
+                <form runat="server">
+
+   
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid"> <div class="navbar-header">
+                    
+                    <a class="navbar-brand" runat="server" href="~/">MyBlog</a>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Categoria/VerCategorias/VerCategorias.aspx">Categoria</a></li>
-                        <li><a runat="server" href="~/Post/ABMPost/ABMPost.aspx">Post</a></li>
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+       <asp:HyperLink NavigateUrl="~/Default.aspx" runat="server" CssClass="navbar-brand" ><asp:Label runat="server" id="lblName" ></asp:Label></asp:HyperLink>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse" >
+      <asp:Panel runat="server" id="pnlAdministrador" Visible="false">
+        <ul class="navbar-nav">
+        
+           <li class="nav-item">
+                <asp:HyperLink NavigateUrl="~/Categoria/VerCategorias/VerCategorias.aspx" runat="server" CssClass="nav-link">Categorias</asp:HyperLink>
+
+        </li>
+        <li class="nav-item">
+                <asp:HyperLink NavigateUrl="~/Post/ABMPost/ABMPost.aspx" runat="server" CssClass="nav-link">Post</asp:HyperLink>
+
+        </li>
+                </ul>
+        </asp:Panel>
+    </div>
+    
+        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    
                         <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Registrarse</a></li>
-                                <li><a runat="server" href="~/Account/Login">Iniciar sesión</a></li>
+                            <ul class="navbar-nav">
+                                                            <li class="nav-item"><asp:HyperLink CssClass="nav-link" runat="server" NavigateUrl="~/Account/Register">Registrarse</asp:HyperLink></li>
+                                <li> </li>
+                                                              <li class="nav-item"><asp:HyperLink CssClass="nav-link" runat="server" NavigateUrl="~/Account/Login">Iniciar sesión</asp:HyperLink></li>
+                                
+                                 
                             </ul>
+                               
                         </AnonymousTemplate>
                         <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="navbar-nav">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hola. <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                    </form>
+                                    
                                         </li>
                             </ul>
                         </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
-        </nav>
+
+                    </asp:LoginView>                        
+                       </div>
+                   
+              
+</nav>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -83,18 +128,15 @@
     <div class="container">
   <div class="row">
     <div class="col-3"> 
-        <br>
       Menu
     </div>
     <div class="col-6">
      <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
     </div>
-    <div class="col-3">
-      <br>
+    <div class="col-3"> 
         Publicidad
-    
-    </div>
+</div>
   </div>
 
         
