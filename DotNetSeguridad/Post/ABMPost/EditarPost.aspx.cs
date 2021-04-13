@@ -19,7 +19,7 @@ namespace DotNetSeguridad.Post
                 Entidades.EntidadesPost post = postNegocio.ObtenerPost(id);
                 if (post == null)
                 {
-                    Response.Redirect("~/Post/ABMPost.aspx");
+                    Response.Redirect("~/Post/ABMPost/ABMPost.aspx");
                 }
                 else
                 {
@@ -43,12 +43,12 @@ namespace DotNetSeguridad.Post
             };
 
             postNegocio.ModificarPost(post);
-            Response.Redirect("~/Post/ABMPost.aspx");
+            Response.Redirect("~/Post/ABMPost/ABMPost.aspx");
         }
 
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Post/ABMPost.aspx");
+            Response.Redirect("~/Post/ABMPost/ABMPost.aspx");
         }
     }
 }

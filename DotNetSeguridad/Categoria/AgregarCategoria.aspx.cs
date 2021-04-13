@@ -30,7 +30,7 @@ namespace DotNetSeguridad.Categoria
 
 
             categoriaNegocio.InsertarCategoria(categoria);
-            Response.Redirect("~/Categoria/VerCategorias.aspx");
+            Response.Redirect("~/Categoria/VerCategorias/VerCategorias.aspx");
         }
     }
 }

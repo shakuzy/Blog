@@ -20,7 +20,7 @@ namespace DotNetSeguridad.Categoria
                 Entidades.EntidadesCategoria categoria = categoriaNegocio.ObtenerCategoria(id);
                 if (categoria == null)
                 {
-                    Response.Redirect("~/Categoria/VerCategorias.aspx");
+                    Response.Redirect("~/VerCategorias/VerCategorias.aspx");
                 }
                 else
                 {
@@ -40,12 +40,12 @@ namespace DotNetSeguridad.Categoria
             };
 
             categoriaNegocio.ActualizarCategoria(categoria);
-            Response.Redirect("~/Categoria/VerCategorias.aspx");
+            Response.Redirect("~/Categoria/VerCategorias/VerCategorias.aspx");
         }
 
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Categoria/VerCategorias.aspx");
+            Response.Redirect("~/Categoria/VerCategorias/VerCategorias.aspx");
 
         }
     }

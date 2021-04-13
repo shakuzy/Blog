@@ -23,7 +23,7 @@ namespace DotNetSeguridad.Post
                 postNegocio.BorrarPost(post);
 
             }
-            Response.Redirect("~/Post/ABMPost.aspx");
+            Response.Redirect("~/Post/ABMPost/ABMPost.aspx");
 
 
 

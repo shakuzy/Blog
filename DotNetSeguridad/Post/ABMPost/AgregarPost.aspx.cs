@@ -27,7 +27,7 @@ namespace DotNetSeguridad.Post
             };
 
             postNegocio.InsertarPost(post);
-            Response.Redirect("~/Default.aspx");
+            Response.Redirect("~/Post/ABMPost/ABMPost.aspx");
 
         }
     }

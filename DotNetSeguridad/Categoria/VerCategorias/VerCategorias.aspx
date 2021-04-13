@@ -30,7 +30,7 @@
 
             </ItemTemplate>
     </asp:Listview>
-              <a class="btn btn-primary" href="AgregarCategoria.aspx?id=<%#Eval("Id") %>" role="button">Agregar</a>    
+              <a class="btn btn-primary" href="/Categoria/AgregarCategoria.aspx?id=<%#Eval("Id") %>" role="button">Agregar</a>    
 
 
 </asp:Content>

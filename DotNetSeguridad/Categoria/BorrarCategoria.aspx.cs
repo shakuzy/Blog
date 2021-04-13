@@ -21,7 +21,7 @@ namespace DotNetSeguridad.Categoria
             };
 
             categoriaNegocio.BorrarCategoria(categoria);
-            Response.Redirect("~/Categoria/VerCategorias.aspx");
+            Response.Redirect("~/Categoria/VerCategorias/VerCategorias.aspx");
         }
     }
 }
